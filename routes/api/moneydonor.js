@@ -15,7 +15,7 @@ async function saveDonorNameToDatabase(donorName) {
 
 router.get('/list', async (req, res) => {
     try {
-      const donors = await Donor.find({}, 'name'); // Retrieve all donor names from the database
+      const donors = await moneyDonor.find({}, 'name'); // Retrieve all donor names from the database
       res.json({ donors: donors.map(donor => donor.name) });
     } catch (error) {
       console.error("Error fetching donor names:", error);
