@@ -2,7 +2,7 @@ const Hospital = require('../models/hospital.model');
 const mongoose = require('mongoose');
 const crypto = require('crypto');
 
-// mongoose.connect(`mongodb+srv://pbpiyush34:piyushbhat@cluster0.sreyp4a.mongodb.net/test?retryWrites=true&w=majority`);
+// mongoose.connect(`mongodb+srv://pbpiyush34:piyushbhat@cluster0.sreyp4a.mongodb.net/data?retryWrites=true&w=majority&appName=Cluster0`);
 mongoose.connect(`mongodb://localhost:27017/OrganDonation`);
 
 var db = mongoose.connection;
